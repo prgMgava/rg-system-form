@@ -24,7 +24,7 @@ const SignUp = () => {
 
 
   const validCharacters = /^[a-zA-Z-áàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇç\'\s]+$/
-  const fullNamePattern = /^(?:([A-Za-z\u00C0-\u00D6\u00D8-\u00f6\u00f8-\u00ff\s]*)) (?:([A-Za-z\u00C0-\u00D6\u00D8-\u00f6\u00f8-\u00ff\s]*))$/g
+  const fullNamePattern = /^(?:([A-Za-z\u00C0-\u00D6\u00D8-\u00f6\u00f8-\u00ff\'\s]*)) (?:([A-Za-z\u00C0-\u00D6\u00D8-\u00f6\u00f8-\u00ff\'\s]*))$/g
   
   const schema = yup.object().shape({
     fullname: yup.string().required("Campo Obrigatório")
